@@ -1,5 +1,5 @@
 # Informatorio-JAVA - Ejercicios complementarios: 
-# Fecha de domingo, 12 de junio de 2022
+# Fecha de entrega: Domingo, 12 de junio de 2022
 # Alumno: Fernando Andres Saavedra
 
 ## 📄  _Ejercicios Complementarios Level 1 y Level 2 del Informatorio 2022._
