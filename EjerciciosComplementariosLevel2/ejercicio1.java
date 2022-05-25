@@ -1,37 +1,31 @@
-//1.  Crear un ArrayList y cargarlo con tus ciudades favoritas de Argentina, luego imprimir por pantalla el ranking
+/*Crear un ArrayList y cargarlo con tus ciudades favoritas de Argentina,
+ luego imprimir por pantalla el ranking
+*/ 
 package EjerciciosComplementariosLevel2;
-import java.util.ArrayList;
-import java.util.Iterator;
+
+import java.util.Arrays;
 import java.util.Scanner;
-public class ejercicio1 {    
+
+public class Ejercicio1 {
     public static void main(String[] args) {
-         
-        Scanner input = new Scanner(System.in);             
-        
-        System.out.print("Ingrese el numero de ciudades a ingresar: ");
-        String cantidad = input.nextLine();
-        ArrayList<String> ciudadesFavoritas = new ArrayList<String>();
-        
-        // si no se incorpora nexLine() cuando hago uso de nexInt hace un salto de linea que todavía no logro comprender porque lo hace
-        // no usar nexline y nexint en el mismo procedimiento
-        // input.nextLine();
-        
-        for(int i = 1; i<= Integer.parseInt(cantidad); i++){
-            System.out.print("Ingrese " + i + "° " + "ciudad favorita: ");
-            ciudadesFavoritas.add("#" + i + " - " + input.nextLine());
-        }
-        input.close();
-        System.out.println();
-        System.out.println("Ciudades favoritas: ");
-        
-        Iterator<String> iterarCiudadesFavoritas = ciudadesFavoritas.iterator();
-        while(iterarCiudadesFavoritas.hasNext()){
-            String ciudad = iterarCiudadesFavoritas.next();
-            System.out.println(ciudad);
-        }
-        // o tambien
-        // for(int i= 0; i< cantidad; i++){
-        //     System.out.println(ciudadesFavoritas.get(i));
-        // }
+        Scanner sc = new Scanner(System.in);
+        String listaCiudad[] = new String[3];
+
+        System.out.println("Ingrese su TOP#3 de Ciudades Favoritas");
+        System.out.print("Ciudad #1: ");
+        listaCiudad[0] = sc.nextLine();
+        System.out.print("Ciudad #2: ");
+        listaCiudad[1] = sc.nextLine();
+        System.out.print("Ciudad #3: ");
+        listaCiudad[2] = sc.nextLine();
+
+        System.out.println("----------------");
+        System.out.println("Sus ciudades son");
+        System.out.println("----------------");
+
+        System.out.println("#1 - " + listaCiudad[0]);
+        System.out.println("#2 - " + listaCiudad[1]);
+        System.out.println("#3 - " + listaCiudad[2]);        
     }
+
 }
